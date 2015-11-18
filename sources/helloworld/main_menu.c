@@ -5,6 +5,7 @@
 #include "poisk_ugrozi.h"
 #include "max_vozmojnoe.h"
 #include "zamena_elemetov_mass.h"
+#include "zamena_elementov_str.h"
 
 
 void main_menu()
@@ -15,6 +16,7 @@ void main_menu()
     puts("3. Поиск угрозы королю от ладьи");
     puts("4. Составить из соответствующих чисел M и N наибольшое возможное число");
     puts("5. Замена значений элеметнов массива");
+    puts("6. Редактор строки");
     int choice;
     scanf("%d", &choice);
     switch (choice) {
@@ -97,6 +99,11 @@ void main_menu()
         case 2: puts("Автоматический тест");
             automate_test_zamena_elementov_mass();
         } break;
+    case 6:
+        puts("Пользовательский тест");
+        zamena_elementov_str();
+
+
     }
 }
 
