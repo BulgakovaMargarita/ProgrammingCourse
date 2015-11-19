@@ -1,11 +1,12 @@
 #include <stdio.h>
-#include "strange_function.h"
-#include "test.h"
-#include "poisk_znacheniy.h"
-#include "poisk_ugrozi.h"
-#include "max_vozmojnoe.h"
+#include "strange_function2.h"
+#include "poisk_znacheniy2.h"
+#include "poisk_ugrozi2.h"
+#include "max_vozmojnoe2.h"
 #include "zamena_elementov_mass.h"
 #include "main_menu.h"
+
+
 
 int main(int argc, char* argv[])
 {
@@ -23,22 +24,22 @@ int main(int argc, char* argv[])
     }
 
     if(strcmp(argv[1], "--is-factorial") == 0){
-        fact();
+        fact(argc[3]);
         return(0);
     }
 
     if(strcmp(argv[1], "--is-strange_function") == 0){
-        strange();
+        strange(argc[3],argc[4]);
         return(0);
     }
 
     if(strcmp(argv[1], "--is-max_vozmojnoe") == 0){
-        max_vozmojnoe();
+        max_vozmojnoe(argc[4],argc[4]);
         return(0);
     }
 
     if(strcmp(argv[1], "--is-poisk_ugrozi") == 0){
-        poisk_ugrozi();
+        poisk_ugrozi(argc[3],argc[4],argc[5],argc[6],argc[7],argc[8],argc[9],argc[10]);
         return(0);
     }
     if(strcmp(argv[1], "--is-zamena_elementov_mass") == 0){

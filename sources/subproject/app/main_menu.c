@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "strange_function.h"
-#include "test.h"
 #include "poisk_znacheniy.h"
 #include "poisk_ugrozi.h"
 #include "max_vozmojnoe.h"
@@ -22,7 +21,6 @@ void main_menu()
     case 1:
         puts("1. Подсчёт значение странным способом");
         puts("2. Вычисление факториала");
-        puts("3. Автоматический тест");
         int choice2;
         scanf("%d", &choice2);
         switch (choice2) {
@@ -33,72 +31,23 @@ void main_menu()
         case 2: puts("Вычисление факториала");
             fact();
             break;
-        case 3: puts("Автоматический тест");
-            automate_test();
-
-        } break;
+                } break;
 
     case 2:
-        puts("Выберете вид теста");
-        puts("1. Пользовательский тест");
-        puts("2. Автоматический тест");
-        int choice3;
-        scanf("%d", &choice3);
-        switch (choice3) {
-        case 1:
-            puts("Пользовательский тест");
-            poisk();
-            break;
-        case 2: puts("Автоматический тест");
-            automate_test_variant7_1();
+         poisk();
 
-        } break;
+        break;
 
     case 3:
-        puts("Выберете вид теста");
-        puts("1. Пользовательский тест");
-        puts("2. Автоматический тест");
-        int choice4;
-        scanf("%d", &choice4);
-        switch (choice4) {
-        case 1:
-            puts("Пользовательский тест");
+
             poisk_ugrozi();
             break;
-        case 2: puts("Автоматический тест");
-            automate_test_variant7_2();
-
-        } break;
     case 4:
-        puts("Выберете вид теста");
-        puts("1. Пользовательский тест");
-        puts("2. Автоматический тест");
-        int choice5;
-        scanf("%d", &choice5);
-        switch (choice5) {
-        case 1:
-            puts("Пользовательский тест");
+
             max_vozmojnoe();
-            break;
-        case 2: puts("Автоматический тест");
-            automate_test_max_vozmojnoe();
-
-        } break;
+             break;
     case 5:
-        puts("Выберете вид теста");
-        puts("1. Пользовательский тест");
-        puts("2. Автоматический тест");
-        int choice6;
-        scanf("%d", &choice6);
-        switch (choice6) {
-        case 1:
-            puts("Пользовательский тест");
-            zamena_elementov_mass();
-            break;
-        case 2: puts("Автоматический тест");
-            automate_test_zamena_elementov_mass();
-        } break;
-
+        zamena_elementov_mass();
 
     }
 }
