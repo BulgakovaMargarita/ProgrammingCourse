@@ -99,10 +99,8 @@ void main_menu()
         case 2: puts("Автоматический тест");
             automate_test_zamena_elementov_mass();
         } break;
-    case 6:
-        puts("Пользовательский тест");
+ case 6:
         zamena_elementov_str();
-
 
     }
 }

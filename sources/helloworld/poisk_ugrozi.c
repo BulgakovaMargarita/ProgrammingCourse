@@ -1,6 +1,8 @@
+#include "poisk_ugrozi2.h"
+
 void poisk_ugrozi(){
     puts("Введите 8 цифр, обозначающих позиции короля и ладей, через клавишу Enter");
-    int x1, x2, y1, y2, z1, z2, a1, a2;
+    int x1, x2, y1, y2, z1, z2, a1, a2,rez;
     scanf("%d", &x1);
     scanf("%d", &x2);
     scanf("%d", &y1);
@@ -9,17 +11,5 @@ void poisk_ugrozi(){
     scanf("%d", &z2);
     scanf("%d", &a1);
     scanf("%d", &a2);
-    if (x1==y1)
-        puts("Угроза от первой ладьи");
-
-    if (x1==z1)
-        puts("Угроза от второй ладьи");
-    if (x1==a1)
-        puts("Угроза от третьей ладьи");
-    if (x2==y2)
-        puts("Угроза от первой ладьи");
-    if (x2==z2)
-        puts("Угроза от второй ладьи");
-    if (x2==a2)
-        puts("Угроза от третьей ладьи");
+    rez= poisk_ugrozi2(x1,x2,y1,y2,z1,z2,a1,a2);
 }

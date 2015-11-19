@@ -87,28 +87,8 @@ void automate_test_variant7_2(){
 }
 
 void test_poisk_variant7_2(){
-    int x1 = 1;
-    int x2 = 2;
-    int y1 = 3;
-    int y2 = 3;
-    int z1 = 1;
-    int z2 = 3;
-    int a1 = 4;
-    int a2 = 3;
     int result;
-    if (x1==y1)
-        result=1;
-    if (x1==z1)
-        result=2;
-    if (x1==a1)
-        result=3;
-    if (x2==y2)
-        result=1;
-    if (x2==z2)
-        result=2;
-    if (x2==a2)
-        result=3;
-    printf("x1: %d, x2 : %d, Nomer ladii : %d \n", x1, x2, result);
+    result = poisk_ugrozi2(1,2,3,3,1,3,4,3);
     test_result_variant7_2(2, result);
 
 }
@@ -124,32 +104,17 @@ void automate_test_max_vozmojnoe(){
 }
 
 void test_poisk_max_vozmojnoe(){
-    int max=0, N=4157, M=8024, N_ostatok_ot_del, N_zhelaya_chast, M_ostatok_ot_del, M_zhelaya_chast ;
-    int i=0;
-    printf("N : %d, M : %d ", N, M);
-    while (N>0) {
-       N_ostatok_ot_del= floor(fmod(N, 10));
-       M_ostatok_ot_del= floor(fmod(M, 10));
-       N_zhelaya_chast=floor(N/10);
-       M_zhelaya_chast=floor(M/10);
-       if(N_ostatok_ot_del>M_ostatok_ot_del)
-           max=max+pow(10,i)*N_ostatok_ot_del;
-       else
-           max=max+pow(10,i)*M_ostatok_ot_del;
-       i=i+1;
-       N=N_zhelaya_chast;
-       M=M_zhelaya_chast;
-    }
-    printf("max : %d \n", max);
+    int max, N=4157, M=8024;
+    max= max_vozmojnoe2(M,N);
     test_result_max_vozmojnoe(8157, max);
 
 }
 
 void test_result_max_vozmojnoe(int expected, int actual){
     if (expected == actual)
-        puts("Ok");
+        puts(" Ok");
     else
-        puts("Test fail");
+        puts(" Test fail");
 }
 
 void automate_test_zamena_elementov_mass(){
