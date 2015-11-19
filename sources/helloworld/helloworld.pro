@@ -11,8 +11,7 @@ SOURCES += main.c \
     max_vozmojnoe.c \
     zamena_elementov_mass.c \
     main_menu.c \
-    max_vozmojnoe2.c \
-    poisk_ugrozi2.c
+    zamena_elementov_str.c
 
 HEADERS += \
     strange_function.h \
@@ -22,7 +21,6 @@ HEADERS += \
     max_vozmojnoe.h \
     zamena_elemetov_mass.h \
     main_menu.h \
-    max_vozmojnoe2.h \
-    poisk_ugrozi2.h
+    zamena_elementov_str.h
 
 

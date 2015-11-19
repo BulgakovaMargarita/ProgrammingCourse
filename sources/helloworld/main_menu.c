@@ -5,7 +5,7 @@
 #include "poisk_ugrozi.h"
 #include "max_vozmojnoe.h"
 #include "zamena_elemetov_mass.h"
-#include "zamena_elementov_str.h"
+
 
 
 void main_menu()
@@ -99,8 +99,11 @@ void main_menu()
         case 2: puts("Автоматический тест");
             automate_test_zamena_elementov_mass();
         } break;
- case 6:
-        zamena_elementov_str();
+
+    case 6:
+           zamena_elementov_str();
+
+
 
     }
 }
