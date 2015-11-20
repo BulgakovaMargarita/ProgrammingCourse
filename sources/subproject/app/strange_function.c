@@ -1,6 +1,6 @@
 #include "strange_function2.h"
 
-void strange(){
+void Search_sum_or_difference(){
     puts("Введите 2 числа через Enter");
     int first_number, second_number;
     scanf("%d", &first_number);

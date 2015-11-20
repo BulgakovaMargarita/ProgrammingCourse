@@ -1,7 +1,7 @@
 #ifndef STRANGE_FUNCTION_H
 #define STRANGE_FUNCTION_H
 
-void strange();
+void Search_sum_or_difference();
 void fact();
 
 #endif
