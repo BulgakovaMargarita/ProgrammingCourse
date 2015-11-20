@@ -26,7 +26,7 @@ void main_menu()
         switch (choice2) {
         case 1:
             puts("Подсчет значения странным способом");
-            strange();
+            Search_sum_or_difference();
             break;
         case 2: puts("Вычисление факториала");
             fact();

@@ -1,7 +1,14 @@
 #include "stack.h"
 
-stack::stack()
+Stack::Stack()
 {
 
 }
 
+
+
+
+Stack::~Stack()
+{
+
+}

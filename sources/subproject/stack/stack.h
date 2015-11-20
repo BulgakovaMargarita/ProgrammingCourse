@@ -2,14 +2,13 @@
 #define STACK_H
 
 
-class stack
+class Stack
 {
 public:
-    stack();
+    Stack();
+    ~Stack();
 
-signals:
 
-public slots:
 };
 
 #endif // STACK_H

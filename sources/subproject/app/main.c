@@ -24,22 +24,22 @@ int main(int argc, char* argv[])
     }
 
     if(strcmp(argv[1], "--is-factorial") == 0){
-        fact(argc[3]);
+        fact(argv[3]);
         return(0);
     }
 
     if(strcmp(argv[1], "--is-strange_function") == 0){
-        strange(argc[3],argc[4]);
+        Search_sum_or_difference_function(argv[3],argv[4]);
         return(0);
     }
 
     if(strcmp(argv[1], "--is-max_vozmojnoe") == 0){
-        max_vozmojnoe(argc[4],argc[4]);
+        max_vozmojnoe(argv[3],argv[4]);
         return(0);
     }
 
     if(strcmp(argv[1], "--is-poisk_ugrozi") == 0){
-        poisk_ugrozi(argc[3],argc[4],argc[5],argc[6],argc[7],argc[8],argc[9],argc[10]);
+        poisk_ugrozi(argv[3],argv[4],argv[5],argv[6],argv[7],argv[8],argv[9],argv[10]);
         return(0);
     }
     if(strcmp(argv[1], "--is-zamena_elementov_mass") == 0){

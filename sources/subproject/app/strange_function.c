@@ -6,7 +6,7 @@ void Search_sum_or_difference(){
     scanf("%d", &first_number);
     scanf("%d", &second_number);
     int result;
-    result = strange_function(first_number, second_number);
+    result = Search_sum_or_difference_function(first_number, second_number);
     printf("%d \n", result);
 }
 

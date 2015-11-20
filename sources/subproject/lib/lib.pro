@@ -14,13 +14,15 @@ SOURCES += \
     max_vozmojnoe2.c \
     poisk_ugrozi2.c \
     poisk_znacheniy2.c \
-    strange_function2.c
+    strange_function2.c \
+    test.c
 
 HEADERS += \
     max_vozmojnoe2.h \
     poisk_ugrozi2.h \
     poisk_znacheniy2.h \
-    strange_function2.h
+    strange_function2.h \
+    test.h
 unix {
     target.path = /usr/lib
     INSTALLS += target
