@@ -10,7 +10,8 @@ SOURCES += \
     finding_max_composite_number.c \
     treat_to_king_of_chess.c \
     search_coefficients_of_equation.c \
-    replacement_of_elements_in_array.c
+    replacement_of_elements_in_array.c \
+    sentence_to_lower.c
 
 HEADERS += \
     main_menu.h \
@@ -18,7 +19,8 @@ HEADERS += \
     finding_max_composite_number.h \
     search_coefficients_of_equation.h \
     treat_to_king_of_chess.h \
-    replacement_of_elements_in_array.h
+    replacement_of_elements_in_array.h \
+    sentence_to_lower.h
 
 
 unix:!macx: LIBS += -L$$OUT_PWD/../lib/ -llib

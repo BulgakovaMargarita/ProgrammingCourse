@@ -1,0 +1,5 @@
+#ifndef SENTENCE_TO_LOWER_H
+#define SENTENCE_TO_LOWER_H
+
+#endif // SENTENCE_TO_LOWER_H
+
