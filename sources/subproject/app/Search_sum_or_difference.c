@@ -1,4 +1,4 @@
-#include "strange_function2.h"
+#include "Search_sum_or_difference_function.h"
 
 void Search_sum_or_difference(){
     puts("Введите 2 числа через Enter");
@@ -6,16 +6,16 @@ void Search_sum_or_difference(){
     scanf("%d", &first_number);
     scanf("%d", &second_number);
     int result;
-    result = Search_sum_or_difference_function(first_number, second_number);
+    result = sum_or_difference_function(first_number, second_number);
     printf("%d \n", result);
 }
 
 
-void fact(){
+void counting_factorial(){
     int number;
     scanf("%d", &number);
     int result;
-    result = fact_function(number);
+    result = counting_factorial_function(number);
     printf("%d \n", result);
 }
 

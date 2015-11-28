@@ -1,9 +1,9 @@
 #include <stdio.h>
-#include "strange_function.h"
-#include "poisk_znacheniy.h"
-#include "poisk_ugrozi.h"
-#include "max_vozmojnoe.h"
-#include "zamena_elementov_mass.h"
+#include "Search_sum_or_difference.h"
+#include "search_coefficients_of_equation.h"
+#include "treat_to_king_of_chess.h"
+#include "finding_max_composite_number.h"
+#include "replacement_of_elements_in_array.h"
 
 
 
@@ -29,25 +29,25 @@ void main_menu()
             Search_sum_or_difference();
             break;
         case 2: puts("Вычисление факториала");
-            fact();
+            counting_factorial();
             break;
                 } break;
 
     case 2:
-         poisk();
+         search_coefficients_of_equation();
 
         break;
 
     case 3:
 
-            poisk_ugrozi();
+            treat_to_king_of_chess();
             break;
     case 4:
 
-            max_vozmojnoe();
+            finding_max_composite_number();
              break;
     case 5:
-        zamena_elementov_mass();
+        replacement_of_elements_in_array();
 
     }
 }

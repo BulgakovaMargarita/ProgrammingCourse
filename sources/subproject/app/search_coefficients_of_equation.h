@@ -2,7 +2,7 @@
 #define POISK_ZNACHENIY_H
 
 
-void poisk();
+void search_coefficients_of_equation();
 
 #endif // POISK_ZNACHENIY_H
 

@@ -6,19 +6,19 @@ CONFIG -= qt
 SOURCES += \
     main.c \
     main_menu.c \
-    max_vozmojnoe.c \
-    poisk_ugrozi.c \
-    poisk_znacheniy.c \
-    strange_function.c \
-    zamena_elementov_mass.c
+    Search_sum_or_difference.c \
+    finding_max_composite_number.c \
+    treat_to_king_of_chess.c \
+    search_coefficients_of_equation.c \
+    replacement_of_elements_in_array.c
 
 HEADERS += \
     main_menu.h \
-    max_vozmojnoe.h \
-    poisk_ugrozi.h \
-    poisk_znacheniy.h \
-    strange_function.h \
-    zamena_elementov_mass.h
+    Search_sum_or_difference.h \
+    finding_max_composite_number.h \
+    search_coefficients_of_equation.h \
+    treat_to_king_of_chess.h \
+    replacement_of_elements_in_array.h
 
 
 unix:!macx: LIBS += -L$$OUT_PWD/../lib/ -llib

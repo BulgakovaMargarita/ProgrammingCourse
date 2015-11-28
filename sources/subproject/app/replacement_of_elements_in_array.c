@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-void zamena_elementov_mass(){
+void replacement_of_elements_in_array(){
    FILE *mf;
    mf=fopen("zamena.txt","r");
    int n, i=0;

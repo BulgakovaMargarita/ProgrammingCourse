@@ -1,9 +1,9 @@
 #include <stdio.h>
-#include "strange_function2.h"
-#include "poisk_znacheniy2.h"
-#include "poisk_ugrozi2.h"
-#include "max_vozmojnoe2.h"
-#include "zamena_elementov_mass.h"
+#include "Search_sum_or_difference_function.h"
+#include "search_coefficients_of_equation_function.h"
+#include "treat_to_king_of_chess_function.h"
+#include "finding_max_composite_number_function.h"
+#include "replacement_of_elements_in_array.h"
 #include "main_menu.h"
 
 
@@ -24,26 +24,26 @@ int main(int argc, char* argv[])
     }
 
     if(strcmp(argv[1], "--is-factorial") == 0){
-        fact(argv[3]);
+        counting_factorial_function(argv[3]);
         return(0);
     }
 
     if(strcmp(argv[1], "--is-strange_function") == 0){
-        Search_sum_or_difference_function(argv[3],argv[4]);
+        sum_or_difference_function(argv[3],argv[4]);
         return(0);
     }
 
     if(strcmp(argv[1], "--is-max_vozmojnoe") == 0){
-        max_vozmojnoe(argv[3],argv[4]);
+        finding_max_composite_number_function(argv[3],argv[4]);
         return(0);
     }
 
     if(strcmp(argv[1], "--is-poisk_ugrozi") == 0){
-        poisk_ugrozi(argv[3],argv[4],argv[5],argv[6],argv[7],argv[8],argv[9],argv[10]);
+        treat_to_king_of_chess_function(argv[3],argv[4],argv[5],argv[6],argv[7],argv[8],argv[9],argv[10]);
         return(0);
     }
     if(strcmp(argv[1], "--is-zamena_elementov_mass") == 0){
-        zamena_elementov_mass();
+        replacement_of_elements_in_array();
         return(0);
     }
 

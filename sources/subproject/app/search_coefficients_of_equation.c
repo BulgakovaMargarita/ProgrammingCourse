@@ -1,17 +1,17 @@
-#include "poisk_znacheniy2.h"
+#include "search_coefficients_of_equation_function.h"
 
-void poisk(){
+void search_coefficients_of_equation(){
     puts("Введите 3 значени х через Enter");
     int x1, x2, x3;
     scanf("%d", &x1);
     scanf("%d", &x2);
     scanf("%d", &x3);
     int i;
-    i = poisk_i(x1,x2,x3);
+    i = search_i_coefficient_of_equation_function(x1,x2,x3);
     int j;
-    j = poisk_j(x1,x2,x3);
+    j = search_j_coefficient_of_equation_function(x1,x2,x3);
     int k;
-    k = poisk_k(x1,x2,x3);
+    k = search_k_coefficient_of_equation_function(x1,x2,x3);
     printf("%d \n", i);
     printf("%d \n", j);
     printf("%d \n", k);
