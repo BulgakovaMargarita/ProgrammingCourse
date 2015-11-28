@@ -5,9 +5,13 @@
 class Stack
 {
 public:
-    Stack();
-    ~Stack();
-
+    int i;
+    int arr[10];
+    int *vertex;
+    //stack();
+    //~stack();
+   void push();
+   void pop();
 
 };
 
