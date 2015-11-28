@@ -9,7 +9,7 @@
 
 #include "finding_max_composite_number_function.h"
 
-
+/// Это пора удалить
 
 
 void automate_test(){

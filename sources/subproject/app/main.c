@@ -10,6 +10,8 @@
 
 int main(int argc, char* argv[])
 {
+
+    /// Тренировочный и отладочный код надо удалять
     printf(" \n argc =  %d \n", argc);
 
     int i;
@@ -23,6 +25,8 @@ int main(int argc, char* argv[])
         }
     }
 
+    ///  Здесь в каждой ветви было бы неплохо проверять, что argv[3] (и так далее) вообще существует,
+    /// это можно узнать из переменной argc
     if(strcmp(argv[1], "--is-factorial") == 0){
         counting_factorial_function(argv[3]);
         return(0);

@@ -6,6 +6,7 @@ void sentence_to_lower(){
 
     FILE* in;
     FILE* out;
+    /// Названия файлов не должны быть зашиты в коде
     in = fopen("input_file.txt", "r");
     out = fopen("output_file.txt", "w");
 
@@ -53,9 +54,9 @@ void sentence_to_lower(){
     }
 
 
-free (str);
-fclose(in);
-fclose(out);
+    free (str);
+    fclose(in);
+    fclose(out);
 
 }
 

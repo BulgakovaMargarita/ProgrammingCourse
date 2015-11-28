@@ -1,6 +1,9 @@
 #ifndef TEST_H
 #define TEST_H
 
+
+/// Тесты уже должны быть перенесены в отдельный подпроект,
+/// под управлением QtTest фреймворка
 void automate_test();
 void test_fact_function();
 void test_strange_function();
