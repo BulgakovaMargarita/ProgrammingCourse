@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "strange_function.h"
+#include "Search_sum_or_difference_function.h"
 
-#include "poisk_znacheniy.h"
-#include "poisk_znacheniy2.h"
-#include "poisk_ugrozi.h"
-#include "poisk_ugrozi2.h"
-#include "max_vozmojnoe.h"
-#include "max_vozmojnoe2.h"
 
-#include "zamena_elementov_mass.h"
+#include "search_coefficients_of_equation_function.h"
+
+#include "treat_to_king_of_chess_function.h"
+
+#include "finding_max_composite_number_function.h"
+
+
 
 
 void automate_test(){
@@ -19,7 +19,7 @@ void automate_test(){
 
 void test_fact_function(){
     puts("Автоматический тест для вычисления факториала");
-    int result = fact_function(4);
+    int result = counting_factorial_function(4);
     printf("Число: 4, Факториал: %d \n",result);
     test_result(24, result);
 }
@@ -45,9 +45,9 @@ void automate_test_variant7_1(){
 }
 
 void test_poisk_variant7_1(){
-    test_result_variant7_1(73, poisk_i(2,2,2));
-    test_result_variant7_1(-100, poisk_j(2,2,2));
-    test_result_variant7_1(-100, poisk_j(2,2,2));
+    test_result_variant7_1(73, search_i_coefficient_of_equation_function(2,2,2));
+    test_result_variant7_1(-100, search_j_coefficient_of_equation_function(2,2,2));
+    test_result_variant7_1(-100, search_j_coefficient_of_equation_function(2,2,2));
 
 }
 
@@ -65,7 +65,7 @@ void automate_test_variant7_2(){
 
 void test_poisk_variant7_2(){
     int result;
-    result = poisk_ugrozi2(1,2,3,3,1,3,4,3);
+    result = treat_to_king_of_chess_function(1,2,3,3,1,3,4,3);
     test_result_variant7_2(2, result);
 
 }
@@ -82,7 +82,7 @@ void automate_test_max_vozmojnoe(){
 
 void test_poisk_max_vozmojnoe(){
 
-    test_result_max_vozmojnoe(8157, max_vozmojnoe2(8024,4157));
+    test_result_max_vozmojnoe(8157, finding_max_composite_number_function(8024,4157));
 
 }
 

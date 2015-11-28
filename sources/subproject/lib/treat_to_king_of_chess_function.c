@@ -1,4 +1,4 @@
-int poisk_ugrozi2(int x1, int x2, int y1, int y2, int z1, int z2, int a1, int a2){
+int treat_to_king_of_chess_function(int x1, int x2, int y1, int y2, int z1, int z2, int a1, int a2){
     int rez;
     if (x1==y1){
         puts("Угроза от первой ладьи");

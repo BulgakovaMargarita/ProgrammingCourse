@@ -11,18 +11,18 @@ TEMPLATE = lib
 CONFIG += staticlib
 
 SOURCES += \
-    max_vozmojnoe2.c \
-    poisk_ugrozi2.c \
-    poisk_znacheniy2.c \
-    strange_function2.c \
-    test.c
+    test.c \
+    Search_sum_or_difference_function.c \
+    finding_max_composite_number_function.c \
+    treat_to_king_of_chess_function.c \
+    search_coefficients_of_equation_function.c
 
 HEADERS += \
-    max_vozmojnoe2.h \
-    poisk_ugrozi2.h \
-    poisk_znacheniy2.h \
-    strange_function2.h \
-    test.h
+    test.h \
+    Search_sum_or_difference_function.h \
+    finding_max_composite_number_function.h \
+    treat_to_king_of_chess_function.h \
+    search_coefficients_of_equation_function.h
 unix {
     target.path = /usr/lib
     INSTALLS += target

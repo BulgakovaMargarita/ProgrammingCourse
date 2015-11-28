@@ -1,4 +1,4 @@
-int poisk_i(int x1, int x2, int x3)
+int search_i_coefficient_of_equation_function(int x1, int x2, int x3)
 {
     int result1, result2, result3;
     int j;
@@ -24,7 +24,7 @@ int poisk_i(int x1, int x2, int x3)
     return i_rez;
 }
 
-int poisk_j(int x1, int x2, int x3)
+int search_j_coefficient_of_equation_function(int x1, int x2, int x3)
 {
     int result1, result2, result3;
     int j, j_rez;
@@ -50,7 +50,7 @@ int poisk_j(int x1, int x2, int x3)
     return j_rez;
 }
 
-int poisk_k(int x1, int x2, int x3)
+int search_k_coefficient_of_equation_function(int x1, int x2, int x3)
 {
     int result1, result2, result3;
     int j;

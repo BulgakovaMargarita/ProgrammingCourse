@@ -1,5 +1,5 @@
 #include <math.h>
-int max_vozmojnoe2(int M, int N){
+int finding_max_composite_number_function(int M, int N){
     int max=0, N_ostatok_ot_del, N_zhelaya_chast, M_ostatok_ot_del, M_zhelaya_chast ;
     int i=0,k;
     if (M>N) k=1; else k=0;

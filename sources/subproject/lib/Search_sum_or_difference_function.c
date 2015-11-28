@@ -1,5 +1,5 @@
 
-int Search_sum_or_difference_function(int first_number, int second_number)
+int sum_or_difference_function(int first_number, int second_number)
 {
     if(first_number < second_number)
         return first_number + second_number;
@@ -7,7 +7,7 @@ int Search_sum_or_difference_function(int first_number, int second_number)
         return first_number - second_number;
 }
 
-int fact_function(int number)
+int counting_factorial_function(int number)
 {
     int result = 1;
     int i;
