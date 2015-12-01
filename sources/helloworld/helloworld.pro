@@ -21,6 +21,6 @@ HEADERS += \
     max_vozmojnoe.h \
     zamena_elemetov_mass.h \
     main_menu.h \
-    zamena_elementov_str.h
+    sentence_to_lower.h
 
 

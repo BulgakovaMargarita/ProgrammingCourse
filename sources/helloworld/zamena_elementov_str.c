@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-void zamena_elementov_str(){
+void sentence_to_lower(){
 
     char *str;
     str=(char*)calloc(21,sizeof(char));
