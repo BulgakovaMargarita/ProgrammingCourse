@@ -1,5 +1,6 @@
 #include "Search_sum_or_difference_function.h"
 
+/// Как это относится к Вашим заданиям?
 void Search_sum_or_difference(){
     puts("Введите 2 числа через Enter");
     int first_number, second_number;
@@ -10,7 +11,7 @@ void Search_sum_or_difference(){
     printf("%d \n", result);
 }
 
-
+/// Как это относится к Вашим заданиям?
 void counting_factorial(){
     int number;
     scanf("%d", &number);

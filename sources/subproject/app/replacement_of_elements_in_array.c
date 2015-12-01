@@ -1,9 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
+
+/// не могу восстановить, что это должно быть за задание
 void replacement_of_elements_in_array(){
+   /// странное имя mf
    FILE *mf;
+   /// в коде не должны быть зашиты имена файлов
    mf=fopen("zamena.txt","r");
    int n, i=0;
+   /// p -- ни о чем не говорящее название
    float *p;
    fscanf(mf,"%d \n",&n);
    p = (float *) malloc(n*sizeof(float));
@@ -14,6 +19,7 @@ void replacement_of_elements_in_array(){
 
    fclose(mf);
 
+   /// Логика не отделена, что тут вообще должно происходить?
    p[0]=(p[0]+p[1])/2;
    p[n-1]=(p[n-2]+p[n-1])/2;
 

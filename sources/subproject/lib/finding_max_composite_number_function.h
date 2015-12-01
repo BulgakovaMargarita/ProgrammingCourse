@@ -6,6 +6,7 @@ extern "C"{
 #endif
 
 
+/// И так понятно, что это функция, слово function не требуется
 int finding_max_composite_number_function(int,int);
 
 #ifdef __cplusplus
