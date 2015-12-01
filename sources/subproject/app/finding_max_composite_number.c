@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <math.h>
 #include "finding_max_composite_number_function.h"
 void finding_max_composite_number(){

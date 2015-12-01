@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include "Search_sum_or_difference_function.h"
 #include "search_coefficients_of_equation_function.h"
 #include "treat_to_king_of_chess_function.h"
@@ -28,6 +29,7 @@ int main(int argc, char* argv[])
     ///  Здесь в каждой ветви было бы неплохо проверять, что argv[3] (и так далее) вообще существует,
     /// это можно узнать из переменной argc
     if(strcmp(argv[1], "--is-factorial") == 0){
+       // функция atoi
         counting_factorial_function(argv[3]);
         return(0);
     }

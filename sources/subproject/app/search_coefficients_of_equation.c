@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "search_coefficients_of_equation_function.h"
 
 void search_coefficients_of_equation(){

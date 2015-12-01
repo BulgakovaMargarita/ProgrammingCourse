@@ -1,3 +1,4 @@
+
 int search_i_coefficient_of_equation_function(int x1, int x2, int x3)
 {
     int result1, result2, result3;

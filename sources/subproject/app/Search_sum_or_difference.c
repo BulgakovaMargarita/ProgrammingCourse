@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "Search_sum_or_difference_function.h"
 
 /// Как это относится к Вашим заданиям?
