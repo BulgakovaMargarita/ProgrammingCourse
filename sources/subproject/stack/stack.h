@@ -5,14 +5,16 @@
 class Stack
 {
 public:
-    Stack();
-    ~Stack();
-    //сделать конструктор копирования
-   void push(const int);
-   int pop();
+   Stack();
+   ~Stack();
+   Stack(const Stack &oStack);
+   void push(int);
+   int print();
+   int b=0;
 private:
-   int top;
+   int i;
    int *array;
+   int pop();
 };
 
 #endif // STACK_H

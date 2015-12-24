@@ -4,14 +4,19 @@ using namespace std;
 
 int main()
 {
-    Stack stack;
-    stack.push(8);
-    stack.push(7);
-    stack.push(6);
-    cout<<stack.pop();
-    cout<<stack.pop();
-    cout<<stack.pop();
-    cout<<stack.pop();
+    Stack st;
+    int i=0;
+    int a;
+    while (i<10){
+        cin>>a;
+        st.push(a);
+        i++;
+    }
+
+
+    cout<<st.b;
+
+
     return 0;
 }
 
