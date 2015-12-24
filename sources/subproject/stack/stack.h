@@ -9,12 +9,11 @@ public:
    ~Stack();
    Stack(const Stack &oStack);
    void push(int);
-   int print();
-   int b=0;
+   int pop();
+   int b;
 private:
    int i;
    int *array;
-   int pop();
 };
 
 #endif // STACK_H

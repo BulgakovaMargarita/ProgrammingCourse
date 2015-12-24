@@ -5,8 +5,9 @@ using namespace std;
 
 Stack::Stack()
 {
-   array=new int(10);
+   array=new int(6);
    i=0;
+   b=0;
 }
 
 Stack::Stack(const Stack &oStack):
@@ -16,7 +17,7 @@ Stack::Stack(const Stack &oStack):
 
 {
 
-    for (i=0; i<10; i++)
+    for (i=0; i<6; i++)
         array[i]=oStack.array[i];
 
 }
@@ -36,17 +37,14 @@ void Stack::push(int a)
 
 int Stack::pop()
 {
-  i=10;
-  b=b+array[i]*pow(10,i);
-  i--;
+    i=5;
+    while(i>=0){
+        cout<<array[i];
+        i--;
+    }
 return 0;
 
 }
 
-int Stack::print()
-{
-  return b;
-
-}
 
 

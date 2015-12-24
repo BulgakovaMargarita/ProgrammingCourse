@@ -5,16 +5,15 @@ using namespace std;
 int main()
 {
     Stack st;
-    int i=0;
-    int a;
-    while (i<10){
-        cin>>a;
-        st.push(a);
-        i++;
-    }
+    st.push(1);
+    st.push(2);
+    st.push(3);
+    st.push(4);
+    st.push(5);
+    st.push(6);
 
 
-    cout<<st.b;
+    cout<<st.pop();
 
 
     return 0;
