@@ -8,9 +8,8 @@ public:
    Stack();
    ~Stack();
    Stack(const Stack &oStack);
-   void push(int);
+   void push();
    int pop();
-   int b;
 private:
    int i;
    int *array;
