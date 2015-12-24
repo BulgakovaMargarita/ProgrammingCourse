@@ -4,6 +4,7 @@
 #include "search_coefficients_of_equation_function.h"
 #include "treat_to_king_of_chess_function.h"
 
+
 class TestTest : public QObject
 {
     Q_OBJECT
@@ -15,9 +16,7 @@ private Q_SLOTS:
     void testCase1();
     void test_max_composite_number_function();
     void test_treat_to_king_of_chess_function();
-    void test_i_coefficient_of_equation_function();
-    void test_j_coefficient_of_equation_function();
-    void test_k_coefficient_of_equation_function();
+    void test_coefficient_of_equation_function();
 };
 
 TestTest::TestTest()
@@ -36,21 +35,22 @@ void TestTest::test_max_composite_number_function(){
 }
 
 void TestTest::test_treat_to_king_of_chess_function(){
-    QCOMPARE(treats_to_king_of_chess(1,3,2,2,2,1,4,5),2);
-    QCOMPARE(treats_to_king_of_chess(3,5,2,2,2,1,4,5),3);
+    QCOMPARE(treats_to_king_of_chesss(1,3,2,2,2,1,4,5),2);
+    QCOMPARE(treats_to_king_of_chesss(3,5,2,2,2,1,4,5),3);
 }
 
-void TestTest::test_i_coefficient_of_equation_function(){
-    QCOMPARE(i_coefficient_of_equation(2,2,2),10);
+void TestTest::test_coefficient_of_equation_function(){
+    int i;
+    int j;
+    int k;
+    coefficient_of_equation(1,2,3, &i, &j, &k);
+    QCOMPARE(i,-6);
+    QCOMPARE(j,11);
+    QCOMPARE(k,-6);
 }
 
-void TestTest::test_j_coefficient_of_equation_function(){
-    QCOMPARE(j_coefficient_of_equation(2,2,2),10);
-}
 
-void TestTest::test_k_coefficient_of_equation_function(){
-    QCOMPARE(k_coefficient_of_equation(2,2,2),10);
-}
+
 
 
 QTEST_APPLESS_MAIN(TestTest)
