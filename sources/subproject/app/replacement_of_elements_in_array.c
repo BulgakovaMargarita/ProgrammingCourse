@@ -5,7 +5,7 @@ void replacement_of_elements_in_array(){
 
    FILE *mf;
    char in_file[500];
-   gets(in_file);
+   printf("%s",&in_file);
 
    mf=fopen(in_file,"r");
    int n, i=0;

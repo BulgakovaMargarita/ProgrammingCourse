@@ -8,10 +8,10 @@ void sentence_to_lower(){
     FILE* out;
 
     char in_file[500];
-    gets(in_file);
+    printf("%s",&in_file);
     in=fopen(in_file,"r");
 
-    gets(in_file);
+    printf("%s",&in_file);
     out=fopen(in_file,"r");
 
     char str;
