@@ -4,8 +4,10 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += main.cpp \
-    stack.cpp
+    stacklib.cpp \
+    stackapp.cpp
 
 HEADERS += \
-    stack.h
+    stacklib.h \
+    stackapp.h
 

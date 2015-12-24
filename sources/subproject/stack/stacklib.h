@@ -2,14 +2,25 @@
 #define STACKLIB_H
 
 
-class stacklib
+
+class Stack
 {
+private:
+    int *stackPtr;
+    const int size;
+    int top;
 public:
-    stacklib();
 
-signals:
+    Stack(int = 10);
+    Stack(const Stack &);
+    ~Stack();
 
-public slots:
+    void push(const int number);
+    void printStack();
+    int getStackSize() const;
+    int getTop() const;
 };
+
+
 
 #endif // STACKLIB_H

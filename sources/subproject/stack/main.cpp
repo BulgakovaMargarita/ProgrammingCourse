@@ -1,14 +1,15 @@
 #include <iostream>
-#include "stack.h"
 using namespace std;
 
+#include "stackapp.h"
 int main()
 {
-    Stack st;
-    st.push();
-    cout<<st.pop();
+    cout<<"Введите количество элементов стека"<<endl;
+    int n;
+    cin>>n;
+    Stackapp st(n);
+    st.launch();
 
 
     return 0;
 }
-

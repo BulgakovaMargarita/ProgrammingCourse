@@ -1,15 +1,22 @@
 #ifndef STACKAPP_H
 #define STACKAPP_H
 
+#include<iostream>
+#include "stacklib.h"
 
-class stackapp
+class Stackapp
 {
 public:
-    stackapp();
+    Stackapp(int=10);
+    ~Stackapp();
+    void launch();
+    int maxSize;
+private:
+    const int size;
+    Stack* st;
+    void getStack();
+    void printStack();
 
-signals:
-
-public slots:
 };
 
 #endif // STACKAPP_H
