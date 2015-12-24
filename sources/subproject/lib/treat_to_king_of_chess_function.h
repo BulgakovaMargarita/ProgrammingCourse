@@ -7,7 +7,7 @@ extern "C"{
 #endif
 
 
-int treats_to_king_of_chess(int, int, int, int, int, int, int, int);
+int treats_to_king_of_chesss(int, int, int, int, int, int, int, int);
 
 #ifdef __cplusplus
 }

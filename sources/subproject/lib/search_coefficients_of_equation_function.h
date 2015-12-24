@@ -7,9 +7,8 @@
 extern "C"{
 #endif
 
-int i_coefficient_of_equation(int, int, int);
-int j_coefficient_of_equation(int, int, int);
-int k_coefficient_of_equation(int, int, int);
+void coefficient_of_equation(int, int, int, int*, int*, int*);
+
 
 #ifdef __cplusplus
 }
