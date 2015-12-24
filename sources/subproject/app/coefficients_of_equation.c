@@ -8,12 +8,12 @@ void coefficients_of_equation(){
     scanf("%d", &x2);
     scanf("%d", &x3);
     int i;
-    i = i_coefficient_of_equation(x1,x2,x3);
     int j;
-    j = j_coefficient_of_equation(x1,x2,x3);
     int k;
-    k = k_coefficient_of_equation(x1,x2,x3);
+    coefficient_of_equation(x1,x2,x3, &i, &j, &k);
     printf("%d \n", i);
     printf("%d \n", j);
     printf("%d \n", k);
+
+
 }
